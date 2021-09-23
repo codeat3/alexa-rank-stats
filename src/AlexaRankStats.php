@@ -3,8 +3,8 @@
 namespace Codeat3\AlexaRankStats;
 
 use Codeat3\AlexaRankStats\Exceptions\WrongMethodCallException;
-use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Str;
 use Symfony\Component\DomCrawler\Crawler;
 
 class AlexaRankStats
@@ -20,6 +20,7 @@ class AlexaRankStats
         if ($node->count() === 0) {
             return null;
         }
+
         return $node->first()->attr($attribute);
     }
 
@@ -37,8 +38,10 @@ class AlexaRankStats
             && isset($matches[2]) && count($matches[2]) === 1
         ) {
             dump('matche');
+
             return $this->getAttributeValue(Str::upper($matches[2][0]), Str::upper($matches[1][0]));
         }
+
         throw new WrongMethodCallException();
     }
 }
