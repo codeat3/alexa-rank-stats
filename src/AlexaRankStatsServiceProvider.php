@@ -17,9 +17,6 @@ class AlexaRankStatsServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('alexa-rank-stats')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_alexa-rank-stats_table')
-            ->hasCommand(AlexaRankStatsCommand::class);
+            ->hasConfigFile();
     }
 }

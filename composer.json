@@ -17,8 +17,10 @@
     ],
     "require": {
         "php": "^8.0",
+        "illuminate/contracts": "^8.37",
+        "illuminate/support": "^8.61",
         "spatie/laravel-package-tools": "^1.4.3",
-        "illuminate/contracts": "^8.37"
+        "symfony/dom-crawler": "^5.3"
     },
     "require-dev": {
         "nunomaduro/collision": "^5.3",
