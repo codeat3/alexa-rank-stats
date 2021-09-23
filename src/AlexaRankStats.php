@@ -26,7 +26,7 @@ class AlexaRankStats
     public function __construct($domain)
     {
         $this->domain = $domain;
-        $this->crawler = new Crawler(Http::get(self::ALEXA_DATA_URL. $this->domain));
+        $this->crawler = new Crawler(Http::get(self::ALEXA_DATA_URL. $this->domain)->body());
     }
 
     public function __call($function, $args)
