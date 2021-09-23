@@ -37,8 +37,6 @@ class AlexaRankStats
             isset($matches[1]) && count($matches[1]) === 1
             && isset($matches[2]) && count($matches[2]) === 1
         ) {
-            dump('matche');
-
             return $this->getAttributeValue(Str::upper($matches[2][0]), Str::upper($matches[1][0]));
         }
 
