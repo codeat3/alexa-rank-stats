@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "codeat3/alexa-rank-stats",
+    "description": "A package to pull alexa rank stats for a domain",
     "keywords": [
-        ":vendor_name",
+        "codeat3",
         "laravel",
-        ":package_slug"
+        "alexa-rank-stats"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/codeat3/alexa-rank-stats",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Swapnil Sarwe",
+            "email": "swapnilsarwe@gmail.com",
             "role": "Developer"
         }
     ],
@@ -30,13 +30,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Codeat3\\AlexaRankStats\\": "src",
+            "Codeat3\\AlexaRankStats\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Codeat3\\AlexaRankStats\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -49,10 +49,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Codeat3\\AlexaRankStats\\AlexaRankStatsServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+                "AlexaRankStats": "Codeat3\\AlexaRankStats\\AlexaRankStatsFacade"
             }
         }
     },

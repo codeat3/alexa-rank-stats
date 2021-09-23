@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Codeat3\AlexaRankStats\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class AlexaRankStatsCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'alexa-rank-stats';
 
     public $description = 'My command';
 
