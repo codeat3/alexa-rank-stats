@@ -2,9 +2,9 @@
 
 namespace Codeat3\AlexaRankStats;
 
+use Codeat3\AlexaRankStats\Commands\AlexaRankStatsCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Codeat3\AlexaRankStats\Commands\AlexaRankStatsCommand;
 
 class AlexaRankStatsServiceProvider extends PackageServiceProvider
 {

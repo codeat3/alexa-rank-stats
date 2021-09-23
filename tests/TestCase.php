@@ -2,9 +2,9 @@
 
 namespace Codeat3\AlexaRankStats\Tests;
 
+use Codeat3\AlexaRankStats\AlexaRankStatsServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Codeat3\AlexaRankStats\AlexaRankStatsServiceProvider;
 
 class TestCase extends Orchestra
 {
