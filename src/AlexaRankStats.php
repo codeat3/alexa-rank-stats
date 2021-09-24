@@ -7,6 +7,12 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Str;
 use Symfony\Component\DomCrawler\Crawler;
 
+/**
+ * @method getPopularityText()
+ * @method getReachRank()
+ * @method getRankDelta()
+ * @method getCountryRank()
+ */
 class AlexaRankStats
 {
     private const ALEXA_DATA_URL = 'http://data.alexa.com/data?cli=10&url=';
